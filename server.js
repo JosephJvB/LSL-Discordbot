@@ -19,7 +19,7 @@ client.on('ready', () => {
 
 const P = process.env.PORT ||  3000;
 
-app.listen(P, () => console.log('app is dead on port', P))(async function init () {
+app.listen(P, () => console.log('app is dead on port', P));(async function init () {
     try {
         app.use(express.json());
 
